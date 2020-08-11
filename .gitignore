@@ -1,0 +1,3 @@
+# Project exclude paths
+/xim-netty/target/
+/xim-netty-msg/target/
