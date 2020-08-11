@@ -1,5 +1,14 @@
 package com.xuliang.forward.router.controller;
 
+import com.xuliang.forward.router.cache.ServerCache;
+import com.xuliang.forward.router.handler.RouteHandle;
+import com.xuliang.forward.router.service.CommonBizService;
+import com.xuliang.forward.router.util.RouteInfoParseUtil;
+import com.xuliang.xim.common.enums.StatusEnum;
+import com.xuliang.xim.common.pojo.RouteInfo;
+import com.xuliang.xim.common.req.LoginReqVO;
+import com.xuliang.xim.common.res.BaseResponse;
+import com.xuliang.xim.common.res.CIMServerResVO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,10 +52,9 @@ public class RouteController {
 
     /**
      * 获取一台 CIM server
-     *
+     * 登录并获取服务器
      * @return
      */
-    @ApiOperation("登录并获取服务器")
     @RequestMapping(value = "login", method = RequestMethod.POST)
     @ResponseBody()
     @Override
@@ -58,19 +66,14 @@ public class RouteController {
         LOGGER.info("userName=[{}] route server info=[{}]", loginReqVO.getUserName(), server);
 
         RouteInfo routeInfo = RouteInfoParseUtil.parse(server);
+        /**校验服务是否可用*/
         commonBizService.checkServerAvailable(routeInfo);
 
-        //登录校验
-        StatusEnum status = accountService.login(loginReqVO);
-        if (status == StatusEnum.SUCCESS) {
+        //保存路由信息
+        accountService.saveRouteInfo(loginReqVO,server);
+        CIMServerResVO vo = new CIMServerResVO(routeInfo);
+        res.setDataBody(vo);
 
-            //保存路由信息
-            accountService.saveRouteInfo(loginReqVO,server);
-
-            CIMServerResVO vo = new CIMServerResVO(routeInfo);
-            res.setDataBody(vo);
-
-        }
         res.setCode(status.getCode());
         res.setMessage(status.getMessage());
 
