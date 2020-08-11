@@ -1,7 +1,7 @@
 package com.xuliang.forward.router.cache;
 
-import com.crossoverjie.cim.route.kit.ZKit;
 import com.google.common.cache.LoadingCache;
+import com.xuliang.forward.router.kit.ZKit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * Function: 服务器节点缓存
  *
- * @author crossoverJie
+ * @author xuliang
  *         Date: 2018/8/19 01:31
  * @since JDK 1.8
  */

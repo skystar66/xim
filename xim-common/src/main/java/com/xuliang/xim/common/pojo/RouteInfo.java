@@ -3,7 +3,7 @@ package com.xuliang.xim.common.pojo;
 /**
  * Function:
  *
- * @author crossoverJie
+ * @author xuliang
  * Date: 2020-04-12 20:48
  * @since JDK 1.8
  */

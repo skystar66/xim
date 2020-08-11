@@ -1,7 +1,7 @@
 package com.xuliang.forward.router.kit;
 
 import com.alibaba.fastjson.JSON;
-import com.crossoverjie.cim.route.cache.ServerCache;
+import com.xuliang.forward.router.cache.ServerCache;
 import org.I0Itec.zkclient.IZkChildListener;
 import org.I0Itec.zkclient.ZkClient;
 import org.slf4j.Logger;
@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * Function: Zookeeper kit
  *
- * @author crossoverJie
+ * @author xuliang
  *         Date: 2018/8/19 00:33
  * @since JDK 1.8
  */

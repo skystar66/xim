@@ -6,25 +6,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="xim-common" />
-        <module name="xim-netty-msg" />
         <module name="xim-client" />
-        <module name="xim-netty" />
-        <module name="xim-server" />
+        <module name="xim-common" />
         <module name="xim-forward-router" />
+        <module name="xim-netty" />
+        <module name="xim-netty-msg" />
+        <module name="xim-server" />
         <module name="xim-store" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="xim-client" options="-parameters" />
-      <module name="xim-common" options="-parameters" />
-      <module name="xim-forward-router" options="-parameters" />
-      <module name="xim-netty" options="-parameters" />
-      <module name="xim-netty-msg" options="-parameters" />
-      <module name="xim-server" options="-parameters" />
-      <module name="xim-store" options="-parameters" />
+      <module name="xim-client" options="" />
+      <module name="xim-common" options="" />
+      <module name="xim-forward-router" options="" />
+      <module name="xim-netty" options="" />
+      <module name="xim-netty-msg" options="" />
+      <module name="xim-server" options="" />
+      <module name="xim-store" options="" />
     </option>
   </component>
 </project>

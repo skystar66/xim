@@ -3,7 +3,7 @@ package com.xuliang.xim.common.req;
 
 /**
  * Function:
- * @author crossoverJie
+ * @author xuliang
  * Date: 2017/6/7 下午11:28
  * @since JDK 1.8
  */

@@ -1,14 +1,14 @@
 package com.xuliang.forward.router.kit;
 
-import com.crossoverjie.cim.route.config.AppConfiguration;
-import com.crossoverjie.cim.route.util.SpringBeanFactory;
+import com.xuliang.forward.router.config.AppConfiguration;
+import com.xuliang.forward.router.util.SpringBeanFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * Function:
  *
- * @author crossoverJie
+ * @author xuliang
  *         Date: 2018/12/23 00:35
  * @since JDK 1.8
  */

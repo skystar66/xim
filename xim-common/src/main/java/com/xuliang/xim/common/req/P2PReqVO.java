@@ -6,7 +6,7 @@ import javax.validation.constraints.NotNull;
 /**
  * Function: 单聊请求
  *
- * @author crossoverJie
+ * @author xuliang
  *         Date: 2018/05/21 15:56
  * @since JDK 1.8
  */

@@ -6,7 +6,7 @@ import com.xuliang.forward.router.handler.sort.SortArrayMap;
 /**
  * Function:自定义排序 Map 实现
  *
- * @author crossoverJie
+ * @author xuliang
  * Date: 2019-02-27 00:38
  * @since JDK 1.8
  */
@@ -21,7 +21,7 @@ public class SortArrayMapConsistentHash extends AbstractConsistentHash {
 
     @Override
     public void add(long key, String value) {
-        // fix https://github.com/crossoverJie/cim/issues/79
+        // fix https://github.com/xuliang/cim/issues/79
         sortArrayMap.clear();
         for (int i = 0; i < VIRTUAL_NODE_SIZE; i++) {
             Long hash = super.hash("vir" + key + i);

@@ -18,7 +18,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * Function:环形队列，可以用来延迟任务。
  *
- * @author crossoverJie
+ * @author xuliang
  * Date: 2019-09-20 14:46
  * @since JDK 1.8
  */

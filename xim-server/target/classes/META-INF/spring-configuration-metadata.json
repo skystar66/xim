@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "executor.task",
+      "type": "com.xuliang.cim.server.config.TaskExecutorConfig",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig"
+    },
+    {
+      "name": "xim.server",
+      "type": "com.xuliang.cim.server.config.XIMServerConfig",
+      "sourceType": "com.xuliang.cim.server.config.XIMServerConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "executor.task.core-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "executor.task.keep-alive",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "executor.task.max-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "executor.task.name",
+      "type": "java.lang.String",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig"
+    },
+    {
+      "name": "executor.task.queue-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.xuliang.cim.server.config.TaskExecutorConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "xim.server.heart-time",
+      "type": "java.lang.Long",
+      "description": "netty heart check time (ms) 20s 心跳检测一次",
+      "sourceType": "com.xuliang.cim.server.config.XIMServerConfig",
+      "defaultValue": 0
+    },
+    {
+      "name": "xim.server.host",
+      "type": "java.lang.String",
+      "description": "manager host",
+      "sourceType": "com.xuliang.cim.server.config.XIMServerConfig",
+      "defaultValue": "127.0.0.1"
+    },
+    {
+      "name": "xim.server.port",
+      "type": "java.lang.Integer",
+      "description": "support  port",
+      "sourceType": "com.xuliang.cim.server.config.XIMServerConfig",
+      "defaultValue": 0
+    }
+  ],
+  "hints": []
+}
