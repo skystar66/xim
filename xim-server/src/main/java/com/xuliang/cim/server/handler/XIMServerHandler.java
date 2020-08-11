@@ -58,7 +58,7 @@ public class XIMServerHandler implements RpcAnswer {
             case DELAY_MESSAGE:
                 chatManager.delayMessage(channel, rpcCmd);
                 break;
-            /**ack*/
+            /**ack消息回执*/
             case ACK:
                 chatManager.ack(channel, rpcCmd);
                 break;
